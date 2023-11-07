@@ -86,7 +86,8 @@ node server.js
 ### 👋 Android connect restful api ใช้ Retofit, OKHtttp
 - สร้าง Directory
 
-![](./resources/Android%20dir%20project.png)
+![image](https://github.com/deltaforce1996/tutorial_mongodb_nodejs_android/assets/67696458/c7523e6e-8549-43d2-be00-cc8fccfe8657)
+
 - เปิดไฟล์ `build.gradle.kts` Module:app เพิ่ม Libs กด sync now
 ```
 dependencies {
