@@ -77,10 +77,6 @@ app.listen(4000, () => {
 ```
 node server.js
 ```
-- หลังจากที่ทดสอบ Web server ผ่านแล้วก็ connect mongodb ใช้ `mongoose`
-```
-
-```
 
 ## 🔥 Frontend Android App, GSON Format, Retrofit  
 1 - ติดตั้ง [Java JDK](https://www.oracle.com/java/technologies/downloads/#jdk21-windows) พร้อมทั้ง set path evironment
