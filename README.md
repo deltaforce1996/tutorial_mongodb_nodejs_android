@@ -27,8 +27,6 @@ services:
     container_name: my-mongo-serve
     ports:
       - "27018:27017"
-    volumes:
-      - ./data:/data/db
     networks:
       - my-network
     restart: always
