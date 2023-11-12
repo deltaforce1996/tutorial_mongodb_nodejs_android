@@ -7,12 +7,65 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:id="@+id/tvResponse"
+        android:layout_width="362dp"
+        android:layout_height="35dp"
+        android:text="Empty!"
+        android:textAlignment="center"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.306"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.206" />
+
+    <Button
+        android:id="@+id/btn_fetch_all"
+        android:layout_width="319dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="8dp"
+        android:onClick="ClickedFetchAll"
+        android:text="Fetch Product All"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_update_by_id"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_update_by_id"
+        android:layout_width="319dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:text="Updated Product By Id"
+        android:onClick="ClickUpdated"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_create_product"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_find_by_id"
+        android:layout_width="319dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:text="Find Product By Id"
+        android:onClick="ClickedFindProduct"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_fetch_all"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_create_product"
+        android:layout_width="319dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="236dp"
+        android:text="Create New Product"
+        android:onClick="ClickedNewProduct"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvResponse"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
