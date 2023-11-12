@@ -90,6 +90,8 @@ node server.js
 
 2 - ติดตั้ง [Android Studio]("https://developer.android.com/studio")
 
+3 - ติดตั้ง Plugin `GSON Format` ลง Android Studio
+
 ### 👋 Android connect restful api ใช้ Retofit, OKHtttp
 - สร้าง Directory
 
