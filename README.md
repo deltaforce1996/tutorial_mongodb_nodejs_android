@@ -27,8 +27,6 @@ services:
     container_name: my-mongo-serve
     ports:
       - "27018:27017"
-    volumes:
-      - ./data:/data/db
     networks:
       - my-network
     restart: always
@@ -78,6 +76,15 @@ app.listen(4000, () => {
 node server.js
 ```
 
+- ผลลัพธ์การ run server.js
+  
+![image](https://github.com/deltaforce1996/tutorial_mongodb_nodejs_android/assets/67696458/60b87d45-9e48-44ea-aeaa-bd6d9a2fb47b)
+
+- ผลลัพธ์ Request server
+  
+![image](https://github.com/deltaforce1996/tutorial_mongodb_nodejs_android/assets/67696458/310c55e8-2996-4ce1-ac07-90430d7de1c6)
+
+
 ## 🔥 Frontend Android App, GSON Format, Retrofit  
 1 - ติดตั้ง [Java JDK](https://www.oracle.com/java/technologies/downloads/#jdk21-windows) พร้อมทั้ง set path evironment
 
@@ -91,10 +98,11 @@ node server.js
 - เปิดไฟล์ `build.gradle.kts` Module:app เพิ่ม Libs กด sync now
 ```
 dependencies {
-  implementation("com.squareup.retrofit2:retrofit:2.9.0")
-  implementation("com.squareup.retrofit2:converter-gson:2.9.0")
-  implementation("com.squareup.okhttp3:okhttp")
-  implementation("com.squareup.okhttp3:logging-interceptor")
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+
+    implementation("com.squareup.okhttp3:okhttp:4.11.0")
+    implementation("com.squareup.okhttp3:logging-interceptor:4.9.0")
   /** ส่วนอื่น... */
 }
 ```
