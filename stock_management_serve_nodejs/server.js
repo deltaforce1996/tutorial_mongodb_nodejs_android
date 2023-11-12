@@ -1,13 +1,14 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
-var morgan = require('morgan')
+const morgan = require('morgan')
 
 const ProductRoutes = require('./src/routes/prodcut.route');
 
 const app = express();
+
 app.use(bodyParser.json());
-morgan('dev')
+app.use(morgan('dev'));
 
 mongoose.connect('mongodb://localhost:27018/strore_db')
 .then(() => console.log('MongoDB Connected...'))
