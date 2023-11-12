@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
                 if(response.isSuccessful()){
                     mTvResponse.setText(response.body().getMessage());
                 }else{
-                    FailedResponse errorResponse = new Gson().fromJson(response.errorBody().toString(), FailedResponse.class);
+                    FailedResponse errorResponse = new Gson().fromJson(response.errorBody().charStream(), FailedResponse.class);
                     mTvResponse.setText(errorResponse.getMessage());
                 }
             }
@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
                 if(response.isSuccessful()){
                     mTvResponse.setText(response.body().getMessage());
                 }else{
-                    FailedResponse errorResponse = new Gson().fromJson(response.errorBody().toString(), FailedResponse.class);
+                    FailedResponse errorResponse = new Gson().fromJson(response.errorBody().charStream(), FailedResponse.class);
                     mTvResponse.setText(errorResponse.getMessage());
                 }
             }
@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
                 if(response.isSuccessful()){
                     mTvResponse.setText(response.body().getMessage());
                 }else{
-                    FailedResponse errorResponse = new Gson().fromJson(response.errorBody().toString(), FailedResponse.class);
+                    FailedResponse errorResponse = new Gson().fromJson(response.errorBody().charStream(), FailedResponse.class);
                     mTvResponse.setText(errorResponse.getMessage());
                 }
             }
@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
                 if(response.isSuccessful()){
                     mTvResponse.setText(response.body().getMessage());
                 }else{
-                    FailedResponse errorResponse = new Gson().fromJson(response.errorBody().toString(), FailedResponse.class);
+                    FailedResponse errorResponse = new Gson().fromJson(response.errorBody().charStream(), FailedResponse.class);
                     mTvResponse.setText(errorResponse.getMessage());
                 }
             }
